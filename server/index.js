@@ -23,7 +23,7 @@ app.use(express.static('./../public/build'))
 
 app.get('/api/images', wc.read)
 
-app.listen(3006, function(){
+app.listen(3007, function(){
     console.log("Engines running")
 });
 

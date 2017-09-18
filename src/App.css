@@ -1,16 +1,27 @@
 
-
+body, html{
+  height: 100%;
+}
 
 .App {
- 
+  background-color: blue;
+ background-image: url(http://trailmob.com/images/trails/5984/yosemite__large.jpg);
+ height: 100vh; 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
   text-align: center;
-  background: linear-gradient(#1900FF, #00D9FF);
+  /* background: linear-gradient(#1900FF, #00D9FF); */
   color: white;
-  height:100vh;
-  width:100vw;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+  /* height:100vh;
+  width:100vw; */
 }
  
-
+.Utah-image{
+  height: 200px;
+  width:200px;
+}
 .Header {
   color: white; 
   animation: fadeIn 2s;
@@ -23,8 +34,10 @@
   width: 200px;
 }
 
-
 .weathercontainer {
+  margin: auto;
+  width:70%;
+  background-color :rgba(112,112,112,0.5);
   display: flex;
   justify-content: center;
 }

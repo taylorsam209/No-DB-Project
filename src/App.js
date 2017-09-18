@@ -36,19 +36,19 @@ class App extends Component {
         city: response.data.name + ':',
         temp: Math.round(response.data.main.temp * 9/5 - 459.67) + ' F',
         wind: response.data.wind.speed + 'speed',
-        humidity: 'Humidity: ' + response.data.main.humidity +'%',
+        humidity:response.data.main.humidity +'%',
         weather: response.data.weather[0].main,
-        description: "Details: " + response.data.weather[0].description,
+        description: response.data.weather[0].description,
       })
       
     })
   }
 
 componentDidMount(){
-  axios.get('http://localhost:3006/api/images').then(response => {
+  axios.get('http://localhost:3007/api/images').then(response => {
     console.log(response);
     this.setState({
-      images: response
+      images: response.data[0]
     })
   })
   }
@@ -73,6 +73,7 @@ componentDidMount(){
          getWeather={this.getWeather} 
          updateCity = {this.updateCity}
          city = {this.state.city}
+         image = {this.state.images}
          />
          <Currentweather 
          city = {this.state.city}

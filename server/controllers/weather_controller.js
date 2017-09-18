@@ -10,7 +10,7 @@
 // }
 
 
-const utahImages = ["http://www.clearwaterhomesutah.com/wp-content/uploads/2015/12/Utah-Landscape-Photographer-arches-ntional-park_MG_0713.jpg"];
+const utahImages = ["Choose a city to see the weather!"];
 
 module.exports= {
 read: function (req, res, next) {
