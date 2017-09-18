@@ -1,0 +1,71 @@
+
+
+
+.App {
+ 
+  text-align: center;
+  background: linear-gradient(#1900FF, #00D9FF);
+  color: white;
+  height:100vh;
+  width:100vw;
+}
+ 
+
+.Header {
+  color: white; 
+  animation: fadeIn 2s;
+}
+
+
+.App-logo {
+  animation: App-logo-spin infinite 17s linear;
+  height: 200px;
+  width: 200px;
+}
+
+
+.weathercontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.leftbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right:5%;
+}
+
+.temp{
+  font-size: 3em;
+}
+
+.humidity {
+  font-size: 1.5em;
+}
+
+.rightbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+.status {
+  font-size:3em;
+}
+
+.description {
+  font-size:1.5em;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
